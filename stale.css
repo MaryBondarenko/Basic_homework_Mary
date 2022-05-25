@@ -1,0 +1,13 @@
+body {
+background-color: rgb(204, 159, 199);
+}
+.clas1 {
+    width: all;
+    height: all;
+    transition: all ls;
+    background-color: rgb(158, 254, 180)
+}
+
+.clas1:hover {
+    transform: scale(1.02);
+}
