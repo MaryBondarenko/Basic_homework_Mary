@@ -22,15 +22,16 @@
     </h3>
     <ul>
         <li>
-            <b>git config --global user.name blabla</b>
+            <b>git config --global user.name</b>
             <p>
                 To set your Git username, run the git config –global user.name command. You should specify both your first and last name but your username can be anything you want to attach to your commits. Your Git username does not need to be the same as your version control username, such as the one you use on GitHub.
             </p>
         </li>
         <li>
-            <b>git config --global user.email blabal@bla</b>
+            <b>git config --global user.email</b>
             <p>
-
+                Git дозволяє встановити глобальне ім’я користувача та адресу електронної пошти для кожного проекту. Ви можете встановити або змінити свій ідентифікатор git за допомогою команди git config. 
+                Зміни стосуються лише майбутніх комітів. Ім’я та електронна адреса, пов’язані з комітами, які ви зробили до внесення змін, не зачіпаються
             </p>
         </li>
         <li>
@@ -40,8 +41,7 @@
                 Його можна використовувати для перетворення існуючого проекту без версії в репозиторій Git або ініціалізації нового порожнього сховища. 
                 Більшість інших команд Git недоступні за межами ініціалізованого репозиторію, тому це зазвичай перша команда, яку ви запускаєте в новому проекті.
             </p>
-        </li>
-            
+        </li>    
         <li>
             <b>git status</b>
                 <p>
@@ -53,8 +53,7 @@
         <li>
             <b>git add</b>
             <p>
-                Що робить Git Add? git add [ім’я файлу] вибирає цей файл і переміщує його в область виконання, позначаючи його для включення до наступного коміту. 
-                Ви можете вибрати всі файли, каталог, конкретні файли або навіть окремі частини файлу для встановлення та фіксації.
+                Це перша команда в ланцюжку операцій, що наказує Git «зберегти» знімок поточного стану проекту історії коммітів. Коли git add використовується як окрема команда, вона переносить очікуючі зміни з робочого каталогу розділ проіндексованих файлів
             </p>
         </li>
         <li>
@@ -140,7 +139,7 @@
             <li>
                 <u>git stash</u>
                 <p>
-                    Stash the changes in a dirty working directory awa
+                    Stash the changes in a dirty working directory away
                 </p>
             </li>
         </ul>
