@@ -7,24 +7,21 @@
 
 h2  {
     font-family: 'Patua One', cursive;
-    text-align: center;
     color: rgb(148, 6, 98);
     }
 
-    p, ul    {
+p, ul    {
         color: rgb(240, 140, 226);
-    }
+        }
 
 body   {
     background-color: rgb(13, 13, 14);
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: justify;
         }
+
 figcaption  {
     color: rgb(240, 234, 234);
     text-align: center;
-}
+            }
 
 .image  {
         display: block;
@@ -32,4 +29,4 @@ figcaption  {
         font-weight: 200px;
         margin-left: auto;
         margin-right: auto;
-    }
+        }

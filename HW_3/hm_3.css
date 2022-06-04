@@ -1,0 +1,393 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+ 
+button:hover {
+  background-color: #f3ff4a;
+}
+
+body  {
+  background-color: #E5E5E5;
+}
+
+
+/*  COOKIE 1 */
+
+.coockie_1    {
+  background-color: #0B2239;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 125px; 
+  max-width: 1440px;
+  height: 72px;
+  width: auto;
+  margin: 10px;
+}
+.coockie_wrapper {
+  display: flex;
+  align-items: center;
+}
+.coockie_description {
+  font-size: 13px;
+  color: #FFFFFF;
+  line-height: 20px;
+  max-width: 922px;
+}
+.coockie_button {
+  background-color: #4AD295;
+  border-radius: 2px;
+  border-color: transparent;
+  padding: 8px, 10px, 8px, 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+  max-width: 200px;
+  min-height: 36px;
+
+}
+.coockie_link   {
+  color: #4AD295;
+  margin-right: 5px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* COOKIE 2 */
+
+.cookie_2    {
+  background-color: #2B2627;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  height: 52px; 
+  width: auto;
+  padding:16px 350px;
+  margin: 10px;
+}
+ 
+._description {
+  font-size: 13px;
+  width: auto;
+  color: #FFFFFF;
+  line-height: 20px;  
+  font-weight: 400;
+  margin: 0 auto;   
+}
+.buttom,
+.attancion  {
+  width: 16px;
+  height: 16px;
+}
+
+.c_link   {
+    color: #fafafa;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+ 
+  /* COOKIE_3 */
+
+.cookie_3 {
+  width: 560px;
+  height: 72px;
+  background-color:  #FFFFFF;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 20px 10px;
+  display: flex;
+  font-size: 14px;
+}
+.information_3 {
+  line-height: 20px;
+  margin: 0 auto;
+  font-weight: 400;
+  color: #0D0C22;
+  max-width: 347px;
+}
+ 
+.coockie_wrapper_3 {
+  display: flex;
+  align-items: center;
+}
+.coockie_button_03 {
+  width: 63px;
+  height: 28px;
+  background: rgba(13, 12, 34, 0.05);
+  border-radius: 8px;
+  padding: 0 auto;
+  border-color: transparent;
+  margin-right: 10px;
+}
+.coockie_button_13 {
+  width: 52px;
+  height: 28px; 
+  background: #EA4C89;
+  border-radius: 8px;
+  padding: 0 auto;
+  color: #FFFFFF;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+.vector_cookie {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(213, 15, 91, 0.1);
+  border-radius: 10px;
+}
+
+.img_3 {
+  width: 20px;
+  height: 20px; 
+  margin: 8px;
+  }
+
+ /*  COOKIE 4 */
+
+ .cookie_4  {
+  color: #FFFFFF;
+  background-color: #26262B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 560px;
+  height: 64px;
+  padding: 12px 16px;
+  margin: 20px 10px;
+  display: flex;
+  max-width: 560px;
+   font-size: 14px;
+ }
+ 
+.coockie_wrapper_4 {
+  display: flex;
+  align-items: center;
+}
+
+.button_4 {
+  width: 49px;
+  height: 28px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+ /*  COOKIE 5 */
+
+ .cookie_5 {
+  width: 360px;
+  height: 206px;
+  background-color: #1C2540;
+  border-radius: 6px;
+  color: #FFFFFF;
+  margin: 20px 10px;
+  line-height: 20px;
+  padding: 24px;
+ }
+
+.coockie_button_5 {
+  width: 85px;
+  height: 32px;
+  background: #09B3AF;
+  border-color: transparent;
+  border-radius: 6px;
+  color: #FFFFFF;
+  margin:0 auto;
+}
+.coockie_wrapper_5 {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+ 
+/* COOKIE_6 */
+
+.cookie_6 {
+  width: 360px;
+  height: 170px;
+  border-radius: 16px;
+  color: #e8e2e2;
+  margin: 20px 10px;
+  padding: 10px;
+  line-height: 20px;
+  background-color:  #FFFFFF;
+}
+.description_6 {
+  font-weight: 400;
+  font-size: 14px;
+  align-items: center;
+  margin: 0 auto;
+  color: #687F8C;
+}
+.coockie_wrapper_6 {
+  font-size: 13px;
+  font-style: normal;
+  padding: 12px 16px 16px 16px;
+}
+.coockie_button_6 {
+  width: 140px;
+  height: 32px;
+  border-radius: 6px;
+  border-color: transparent;
+  background-color: #EAF0F4;
+  padding: 0 auto;
+  color: gray;
+  font-size: 14px;
+}
+ .coockie_button_66 {
+  width: 140px;
+  height: 32px; 
+  background-color: #40C1A7;
+   border-color: transparent;  
+   border-radius: 6px;
+   padding: 0 auto; 
+   padding-left: 8px;
+   margin-left: 20px;
+ }
+
+  /*  COOKIE 7 */
+  .cookie_7 {
+    width: 320px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 32px;
+    margin: 20px 10px;
+    line-height: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.87%, rgba(255, 255, 255, 0.15) 100%), #FFFFFF;    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+  }
+  .description_7 {
+   
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    align-items: center;
+    margin: 0 auto;
+    color: #15295A;
+  }
+  .coockie_wrapper_7 {
+    font-size: 13px;
+    font-style: normal;
+    padding: 20px 10px;
+    display: flex; 
+  }
+ 
+  .coockie_button_7 {
+    padding: 10px 32p;
+    border-radius: 43px;
+    border-color: transparent;
+    background-color: #4A7EFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 121px;
+    height: 44px;
+    margin: 0 auto;
+  }
+ 
+ /* COOKIE_8 */
+
+.cookie_8 {
+    width: 320px;
+    height: 137px;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 20px 10px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    
+}
+.description_8 {
+  width: 288px;
+  height: 60px;
+  text-align: center;
+  line-height: 20px;
+  color: #000000;
+}
+.coockie_wrapper_8 {
+  font-size: 13px;
+  font-style: normal;
+  margin: 10px 0;
+}
+
+.coockie_button_8 {
+  width: 64px;
+  height: 33px;
+  font-size: 14px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #6666FF;
+  color: #FFFFFF;
+  line-height: 17px;
+  font-weight: 500;
+  margin-left: 130px; 
+}
