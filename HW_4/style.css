@@ -1,0 +1,265 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+ /* BLOCK_1 */
+.block_1 { 
+    max-height:500px;
+    Height: 500px;
+    background-color: #ED4C5C;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 160px;
+    padding-right: 70px;
+}
+ 
+aside {
+    color: #FFFFFF;
+    width: 400px; 
+    Height: 500px;
+}
+ 
+aside h1 {
+    font-size: 36px;
+    font-weight: 600;
+} 
+.article_1 {
+    padding-top: 50px;
+    padding: 50px;
+}
+
+.img_google {
+    Width:32px;
+    Height:32px;
+    left: 163px;
+    top: 357px;
+    bottom: 111px;
+}
+
+.img_a {
+    left: 220px;
+    Width:28px;
+    Height:28px; 
+    bottom: 113px; 
+    top: 359px;
+}
+.img_windows {
+    Width:24px;
+    Height:24px;   
+    bottom: 115px; 
+    top: 361px;
+    left: 273px;
+}
+main {
+    Height:500px;
+    width: 740px;
+    float: right;
+    position: relative;
+  padding-left: 0 auto;
+}
+.main_div {
+    position: absolute;
+    Width:653px;
+    Height:500px;
+    margin-top: -40px;
+   
+}
+img {
+    position: absolute;
+    Width:455px;
+    Height:311px;
+}
+ 
+.img_1 {
+    background-color: url(.jpg), #C4C4C4;
+opacity: 0.5;
+border-radius: 15px;
+Width:383px;
+Height:267px;
+left: 44px;
+top: 60px;
+}
+
+.img_2 {
+   top: 50px;
+   left: 100px;
+   position: relative;
+}
+.img_3 {
+    background-color: url(.jpg), #C4C4C4;
+    opacity: 0.5;
+    border-radius: 15px;
+    Width:383px;
+    Height:267px;
+    right: 44px;
+    top: 60px;
+}
+ 
+/* BLOCK_2 */
+
+
+.block_2 {
+   display: flex;
+    margin: 0 auto;
+    Height: 500px;
+    background-color: #FFFFFF;
+    padding-left: 176px;
+    padding-top:117px;
+    font-family: 'Lato', sans-serif;
+   
+}
+.aside_2 {
+    padding-right: 125px;
+    width: 700px;
+    line-height: 1.2;
+     Height:500px;
+     padding-bottom: 100px;
+}
+.main_2 {
+    Width:1440px;
+    Height:500px;
+}
+.wrapper {
+    width: 540px;
+    margin-bottom: 24px;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.input_name {
+    Width:255px;
+    Height:60px;
+    border-color: #333333;
+    Weight:400;
+    font-size: 16px;
+    Line height:19.2px;
+    margin-top:10px;
+}
+
+input {
+    Width:540px;
+Height:60px;
+border: 1px solid #333333;
+border-radius: 6px;
+box-sizing: border-box;
+color: #676666;
+    text-align: center;
+}
+.input_phone {
+    Width:540px;
+    Height:60px;
+    border-color: #333333;
+    Weight:400;
+    font-size: 16px;
+    Line height:19.2px;
+    margin-top:10px;
+}
+select {
+    color: #676666;
+    font-size: 16px;
+     font-weight: 400;
+     Width:540px;
+     Height:60px;
+     border: 1px solid #333333;
+     border-radius: 6px;
+    bottom: 155px;
+    left: 735px;
+    margin-top: 24px;
+}
+
+button {
+    margin-top: 24px;
+    text-transform: uppercase;
+    cursor:pointer;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    Width:160px;
+    height: 50px;
+   text-align: center;
+    color: #FFFFFF;
+    top: 372px;
+}
+
+/* BLOCK_3 */
+
+.block_3 {
+    Height: 435px;
+    background-color: #FAFAFA;
+    font-family: 'Lato', sans-serif;
+  margin-top: 45px;
+  display: flex;
+  
+}
+.adress_wrapper {
+    width:254px;
+    Height:109px;
+   color: black;
+    padding-top: 85px;
+    padding-left: 166px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.copyright {
+    margin-top: 141px;
+    Width:155px;
+ Height:14px;
+}
+.adress_1,
+.services,
+.info {
+    font-size: 18px;
+    padding-bottom: 33px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.services_wrapper,
+.info_wrapper {
+    width:254px;
+    Height:9px;
+   color: black;
+  padding-left: 30px;
+  margin-top: 85px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+}
+.info_wrapper {
+    Height:128px;
+}
+.fb,
+.in,
+.twitter {
+    Width:14px;
+    Height:14px;
+}
+
+.social{
+    Width:66px;
+Height:14px;
+margin-top: 20px;
+ 
+}
+.in {
+    margin-left: 25px;
+}
+.twitter {
+    margin-left: 50px;
+}
+
+.support_logo {
+    Width:216px;
+Height:31px;
+}
+.support_wrapper {
+    Width:216px;
+    Height:31px;
+    margin-top: 85px;
+    margin-left: 19px;
+}
