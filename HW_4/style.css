@@ -3,10 +3,8 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
- /* BLOCK_1 */
 .block_1 { 
     max-height:500px;
-    Height: 500px;
     background-color: #ED4C5C;
     display: flex;
     font-family: 'Lato', sans-serif;
@@ -54,7 +52,6 @@ aside h1 {
     left: 273px;
 }
 main {
-    Height:500px;
     width: 740px;
     float: right;
     position: relative;
@@ -63,7 +60,6 @@ main {
 .main_div {
     position: absolute;
     Width:653px;
-    Height:500px;
     margin-top: -40px;
    
 }
@@ -75,12 +71,12 @@ img {
  
 .img_1 {
     background-color: url(.jpg), #C4C4C4;
-opacity: 0.5;
-border-radius: 15px;
-Width:383px;
-Height:267px;
-left: 44px;
-top: 60px;
+    opacity: 0.5;
+    border-radius: 15px;
+    Width:383px;
+    Height:267px;
+    left: 44px;
+    top: 60px;
 }
 
 .img_2 {
@@ -100,27 +96,22 @@ top: 60px;
  
 /* BLOCK_2 */
 
-
 .block_2 {
    display: flex;
     margin: 0 auto;
-    Height: 500px;
     background-color: #FFFFFF;
     padding-left: 176px;
     padding-top:117px;
     font-family: 'Lato', sans-serif;
-   
 }
 .aside_2 {
-    padding-right: 125px;
-    width: 700px;
     line-height: 1.2;
-     Height:500px;
      padding-bottom: 100px;
+ 
 }
 .main_2 {
-    Width:1440px;
-    Height:500px;
+  padding-left: 125px;
+   
 }
 .wrapper {
     width: 540px;
@@ -129,7 +120,6 @@ top: 60px;
     justify-content: space-between;
     display: flex;
     justify-content: space-between;
-    
 }
 .input_name {
     Width:255px;
@@ -141,18 +131,26 @@ top: 60px;
     margin-top:10px;
 }
 
-input {
-    Width:540px;
-Height:60px;
-border: 1px solid #333333;
-border-radius: 6px;
-box-sizing: border-box;
-color: #676666;
-    text-align: center;
-}
-.input_phone {
+input,
+.input_phone,
+select  {
     Width:540px;
     Height:60px;
+}
+
+input {
+    border: 1px solid #333333;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #676666;
+}
+ 
+::placeholder {
+    padding-left: 31px;
+    font-family: 'Lato', sans-serif;
+  
+}
+.input_phone {
     border-color: #333333;
     Weight:400;
     font-size: 16px;
@@ -163,13 +161,12 @@ select {
     color: #676666;
     font-size: 16px;
      font-weight: 400;
-     Width:540px;
-     Height:60px;
      border: 1px solid #333333;
      border-radius: 6px;
     bottom: 155px;
     left: 735px;
     margin-top: 24px;
+    padding-left: 31px;
 }
 
 button {
@@ -189,17 +186,14 @@ button {
 /* BLOCK_3 */
 
 .block_3 {
-    Height: 435px;
     background-color: #FAFAFA;
     font-family: 'Lato', sans-serif;
-  margin-top: 45px;
-  display: flex;
-  
+    margin-top: 45px;
+    display: flex;
 }
 .adress_wrapper {
     width:254px;
-    Height:109px;
-   color: black;
+    color: black;
     padding-top: 85px;
     padding-left: 166px;
     font-family: 'Lato', sans-serif;
@@ -209,7 +203,7 @@ button {
 .copyright {
     margin-top: 141px;
     Width:155px;
- Height:14px;
+    margin-bottom: 86px;
 }
 .adress_1,
 .services,
@@ -222,17 +216,14 @@ button {
 .services_wrapper,
 .info_wrapper {
     width:254px;
-    Height:9px;
-   color: black;
-  padding-left: 30px;
-  margin-top: 85px;
+    color: black;
+    padding-left: 30px;
+    margin-top: 85px;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     line-height: 19px;
 }
-.info_wrapper {
-    Height:128px;
-}
+ 
 .fb,
 .in,
 .twitter {
@@ -242,8 +233,8 @@ button {
 
 .social{
     Width:66px;
-Height:14px;
-margin-top: 20px;
+    Height:14px;
+    margin-top: 20px;
  
 }
 .in {
@@ -255,11 +246,10 @@ margin-top: 20px;
 
 .support_logo {
     Width:216px;
-Height:31px;
+    Height:31px;
 }
 .support_wrapper {
     Width:216px;
-    Height:31px;
     margin-top: 85px;
     margin-left: 19px;
 }
