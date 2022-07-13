@@ -1,0 +1,353 @@
+ 
+$navColor: #505F98;
+$withoutLine: none;
+$btnColorBlack:#111B47;
+$btnColorWhite: #FFFFFF;
+$pColor:#6F7CB2;
+$h2:#091133;
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@mixin font14p {
+    color: #5D6970;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+
+@mixin font12 {
+    color: #5D6970;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+@mixin titleFont16 {
+    color: #091133;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin h2About {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+@mixin font16 {
+    color: #6F7CB2;
+   
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+
+@mixin btnBlack {
+    background: #111B47;
+    border-radius: 2px;
+    color: #FFFFFF;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    min-width: 160px;
+    padding: 4px 20px;
+    box-sizing: border-box;
+}
+
+@mixin Font() {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+@mixin Fone18 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+   
+} 
+#main-home {
+    padding-top: 2%;
+    margin: 0 auto;
+   background-image: url('../image.css/Path.png');
+   z-index: 1;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+
+ .nav-home {
+             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5%;
+
+                ul {
+                    @include Font;
+                    display: flex;
+                }
+                    li {
+                        @include Font;
+                        color: $navColor;
+                        list-style-type: none;
+                        cursor: pointer;
+                        margin-left: 60px;
+                    }
+            .nav-center {
+                a {
+                    color: #37447E;
+                    text-decoration: $withoutLine;
+                    font-size: 26px;
+                    font-weight: 900;
+                    line-height: 38px;
+                }
+         }
+}
+
+
+   @media screen and (max-width:720px ) {
+        .nav-home {
+            flex-direction: column;
+            align-items: center;
+           margin: 0 auto;
+        }
+        .btn-wrapper {
+            display: flex
+        }
+
+        .home-photo {
+            display: none;
+        }
+
+    
+        
+    }
+
+
+    @media screen and (max-width:720px ){
+    .home {
+        .home-content {
+            width: 100%;
+            .wrapper-nav-content {
+                width: 90%;
+            }
+        }
+    }
+    }
+
+.btn-nav {
+        .btn {
+           @include btnBlack;
+            
+        }
+}
+
+ 
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 7%;
+    padding-top: 10%;
+
+    .btn {
+        margin-top: 70px;
+
+        &.black {
+            @include btnBlack;
+        }
+    
+        &.white {
+            cursor: pointer;
+            margin-left: 5%;
+            background: $btnColorWhite;
+            color: $btnColorBlack;
+            border: 2px solid $btnColorBlack;
+            padding: 5px 32px;
+        }
+
+    }
+}
+
+.wrapper-nav-content {
+    h2 {
+        line-height: 66px;
+        font-size: 50px;
+        color: $h2;
+    }
+    p {
+        @include Fone18();
+        color: $navColor;
+       text-align:justify;
+    }
+}
+
+
+ 
+.about-wrapper {
+    margin: 0 auto;
+    display: flex;
+    padding-left: 7%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    .left-bar  {
+        width: 45%;
+        h2 {
+            @include h2About ();
+        }
+        p {
+            @include font16 ();
+        }
+    }
+
+}
+
+
+.wrapper-title  {
+    display: flex;
+        .title {
+            h3 {
+               @include titleFont16 ();
+            }
+            p {
+                @include font12 ();
+            }
+        }
+
+}
+
+.item {
+   margin-bottom: 10%;
+    display: flex; 
+    justify-content: space-around;
+        h3 {
+            @include h2About ();
+        }
+        p {
+            @include font16 ();
+        }
+    }
+    
+.item-text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.btn-about {
+    margin-top: 5%;
+    .btn {
+       @include btnBlack;
+        
+    }
+    p {
+       @include font14p;
+    }
+}
+
+.wrapper-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 25%;
+    h3 {
+        @include h2About ();
+       
+    }
+    h2 {
+        
+        font-size: 50px;
+        color: $h2;
+        margin: 0;
+    }
+    p {
+        @include font16 ();
+        text-align: center;
+        margin-bottom: 10%;
+     }
+}
+
+footer {
+    background: no-repeat;
+    background-position: center;
+     background-size: cover; 
+    border-top: 1px solid transparent;
+   background-image: url('../image.css/Rectangle-3.png');
+
+   .wrapper-price {
+    
+    margin: auto;
+    margin-top: 10%;
+   }  
+}
+
+.contact {
+    background: #E7ECFF;
+
+    .nav-footer {
+        margin: 5%;
+    padding-top: 10%;
+        
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5%;
+            p {
+                @include font14p;
+                }
+    }
+
+        .nav-center{
+            a {
+                color: #37447E;
+                text-decoration: $withoutLine;
+                font-size: 26px;
+                font-weight: 900;
+                line-height: 38px;
+            }
+}
+}
+
+.line-footer {
+    hr {
+        color: #f2f0f0;
+        margin: 0 4%;
+        }
+    }
+
+.social {
+    svg {
+        padding-top: 20%;
+    }
+}
+    
