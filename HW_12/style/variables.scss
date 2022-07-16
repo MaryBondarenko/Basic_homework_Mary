@@ -30,7 +30,7 @@ text-align: center;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
-    text-align: left;
+    
 
 }
 
@@ -59,7 +59,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 26px;
 letter-spacing: 0px;
-text-align: left;
+ 
 
 }
 
@@ -137,34 +137,93 @@ body {
 
 
    @media screen and (max-width:720px ) {
+        body {
+       margin-left: 6%;
         .nav-home {
             flex-direction: column;
             align-items: center;
            margin: 0 auto;
         }
         .btn-wrapper {
-            display: flex
+            display: flex;
+            justify-content: space-around;
         }
 
         .home-photo {
             display: none;
         }
-
-    
-        
     }
-
+   }
 
     @media screen and (max-width:720px ){
     .home {
         .home-content {
             width: 100%;
             .wrapper-nav-content {
-                width: 90%;
+                width: 100%;
+                text-align: center;
             }
         }
     }
     }
+
+
+
+    @media screen and (max-width:720px ){
+        .about {
+                width: 100%;
+                .about-wrapper {
+                    width: 100%;
+                    display: flex;
+                flex-direction: column;
+                    .card {
+                        width: auto;
+                        object-position: 50% 50%;
+                        object-fit: cover;
+                    }
+                    .left-bar {
+                        width: auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:720px ) {
+            .item {
+                flex-direction: column;
+                width: 100%;
+                .item-text {
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    .p {
+                        text-align: center;
+                    }
+                }
+            }
+            .price {
+                .wrapper-price {
+                    text-align: center;
+                }
+            }
+        }
+        
+
+        @media screen and (max-width:520px ) {
+                .nav-footer {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .nav-home {
+                    .wrapper-nav-home>ul {
+                        display: flex;
+                        margin-left: -10%;
+                    }
+                }
+        }
+
 
 .btn-nav {
         .btn {
