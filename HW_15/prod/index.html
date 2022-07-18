@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 </head>
 <body>
+    <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -29,7 +38,10 @@
             <button class="btn-order">Заказать</button>
         </div>
         <div class="right-block">
-            <img src="img/product.png" alt="" class="main-image">
+            <picture>
+                <source srcset="img/product.avif" type="image/avif" />
+                <img src="img/product.png" alt="" class="main-image">
+            </picture>
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -105,7 +117,13 @@
         </h2>
         <div class="reason">
             <div class="square">
-                <img src="img/reason1.png" alt="" class="width60">
+                <div class="bg-reason1"></div>
+
+                <!-- <picture>
+                    <source srcset="img/reason1.avif" type="image/avif" />
+                    <img src="img/reason1.png" alt="" class="width60">
+                </picture> -->
+                
             </div>
             <h4 class="h4">Быстрый и легкий монтаж</h4>
             <div class="reason-text">Зеркало с монитором крепится поверх штатного и не требует дополнительных установок.
@@ -113,7 +131,12 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason2.png" alt="">
+                <!-- <picture>
+                    <source srcset="img/reason2.avif" type="image/avif" />
+                </picture> -->
+                <div class="bg-reason2"></div>
+
+                <!-- <img src="img/reason2.png" alt=""> -->
             </div>
             <h4 class="h4">Стоимость</h4>
             <div class="reason-text">Цена видеопарктроника у дилера от 19990 грн.Наша цена всего 3990 грн.
@@ -121,7 +144,8 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason3.png" alt="" class="width35">
+                <!-- <img src="img/reason3.avif" alt="" class="width35"> -->
+                <div class="bg-reason3"></div>
             </div>
             <h4 class="h4">Экономия</h4>
             <div class="reason-text">В случае наезда на препятствие при движении задним ходом, стоимость ремонта бампера
@@ -130,7 +154,9 @@
         </div>
         <div class="reason">
             <div class="square">
-                <img src="img/reason4.png" alt="">
+                <!-- <img src="img/reason4.png" alt=""> -->
+                <div class="bg-reason4"></div>
+
             </div>
             <h4 class="h4">Безопасность для пешеходов</h4>
             <div class="reason-text">при движении задним ходом (угол обзора нашей камеры 170 градусов)
@@ -150,16 +176,25 @@
         <div class="left-block">
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
-            <img src="img/girl-in-car.jpg" alt="" class="full-width">
+            <picture>
+                <source srcset="img/girl-in-car.avif" type="image/avif" />
+                <img src="img/girl-in-car.jpg" alt="" class="full-width">
+            </picture>
             <img src="img/broken-car1.jpg" alt="" class="half-width">
-            <img src="img/broken-car2.jpg" alt="" class="half-width">
+            <picture>
+                <source srcset="img/broken-car2.avif" type="image/avif" />
+                <img src="img/broken-car2.jpg" alt="" class="half-width">
+            </picture>
         </div>
         <div class="right-block">
             <p>Видеопарктроник с подарком стоит</p>
             <p class="cost"><span class="yellow">3990</span> рублей</p>
-            <img src="img/product.jpg" alt="" class="full-width small-height-fix">
+            <img src="img/product.avif" alt="" class="full-width small-height-fix">
             <span class="plus yellow">+</span>
-            <img src="img/gift.jpg" alt="" class="full-width">
+            <picture>
+                <source srcset="img/gift.avif" type="image/avif" />
+                <img src="img/gift.jpg" alt="" class="full-width">
+            </picture>
         </div>
         <button class="btn-order centred">Заказать</button>
     </div>
@@ -167,10 +202,16 @@
 <section class="reviews">
     <div class="wrapper">
         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-        <img src="img/arrow-left.png" alt="" class="arrow-left">
+        <picture>
+            <source srcset="img/arrow-left.avif" type="image/ avif" />
+            <img src="img/arrow-left.png" alt="" class="arrow-left">
+        </picture>
         <div class="review-slider">
             <div class="slide">
-                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <picture>
+                    <source srcset="img/review1.avif" type="image/avif" />
+                    <img src="img/review1-ava.jpg" alt="" class="main-review-img">
+                </picture>
                 <p class="review-text">
                     Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
                     дизайн
@@ -186,7 +227,12 @@
                     зеркало
                     любой машины, вообщем то что доктор прописал!
                 </p>
-                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                <div class="review-author">
+                    <picture>
+                        <source srcset="img/review1-ava.avif" type="image/avif" />
+                        <img src="img/review1-ava.jpg" alt="" class="ava">
+                    </picture>
+                    <b>Константин</b><i>г.
                     Днепропетровск</i></div>
             </div>
         </div>
@@ -210,7 +256,12 @@
             <div class="adv"><img src="img/adv2.png" alt="">
                 <div class="adv-title yellow">365 дней гарантии</div>
             </div>
-            <div class="adv"><img src="img/adv3.png" alt="">
+            <div class="adv">
+                <picture>
+                    <source srcset="img/adv3.avif" type="image/avif" />
+                    <img src="img/adv3.png" alt="">
+                </picture>
+                
                 <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
             </div>
         </div>
@@ -240,14 +291,20 @@
         </div>
     </div>
 </section>
-<seciton class="last-screen">
+<section class="last-screen">
     <div class="wrapper">
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
-            <img src="img/product-reverse.jpg" alt="">
+            <picture>
+                <source srcset="img/product-reverse.avif" type="image/avif" />
+                <img src="img/product-reverse.jpg" alt="">
+            </picture>
             <span class="plus">+</span>
-            <img src="img/gift-reverse.jpg" alt="">
+            <picture>
+                <source srcset="img/gift-reverse.avif" type="image/avif" /> 
+                <img src="img/gift-reverse.jpg" alt="">
+            </picture>
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -262,7 +319,7 @@
             </form>
         </div>
     </div>
-</seciton>
+</section>
 <footer>
     <div class="wrapper">
 
@@ -311,5 +368,30 @@
         player.stopVideo();
     }
 </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+
+    <!-- <script type="text/javascript"> -->
+     <script>
+
+    $('.review-slider').slick();
+    </script>
+
+<!-- preloader -->
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 </body>
 </html>
